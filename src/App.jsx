@@ -1,32 +1,3 @@
-/*
-JSON Tree Visualizer - Single-file React component (App.jsx)
-
-How to use:
-1. Create a new React project (Vite or CRA).
-2. Install dependencies:
-   npm install react-flow-renderer html-to-image
-   (or yarn add ...)
-3. Add Tailwind CSS (optional) or keep the inline classes.
-4. Replace src/App.jsx with this file. Start dev server.
-
-Features implemented in this single-file example:
-- JSON input + validation + sample placeholder
-- Build hierarchical nodes & edges recursively
-- React Flow for rendering, with colors for Objects/Arrays/Primitives
-- Search by JSON path (supports $.a.b and a[0].b style)
-- Highlight matching node and pan/zoom to it
-- Zoom controls + fit view
-- Clear/Reset
-- Dark/Light toggle
-- Click node to copy JSON path
-- Hover shows tooltip with path and value
-- Download as PNG (requires html-to-image)
-
-Notes:
-- This is a compact, educational single-file example. For production, split into smaller files.
-- The layout algorithm is a simple tree layout (horizontal depth, vertical spacing); it should work well for moderate-sized JSON.
-*/
-
 import React, { useCallback, useMemo, useRef, useState } from 'react';
 import ReactFlow, { MiniMap, Controls, Background, useNodesState, useEdgesState, addEdge, applyEdgeChanges, applyNodeChanges } from "reactflow";
 
